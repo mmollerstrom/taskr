@@ -15,6 +15,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem "haml-rails", "~> 0.9"
 gem "devise"
+gem "cancancan", '~> 1.10'
 
 group :development, :test do
   gem 'coveralls', require: false
