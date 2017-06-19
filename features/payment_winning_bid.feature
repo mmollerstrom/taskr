@@ -36,5 +36,6 @@ Feature: As a requester
       And I fill in field "Exp Month" with "03"
       And I fill in field "Exp Year" with "19"
       And I fill in field "CVV" with "133"
-      And I click on "Make Purchase"
+      And I click on "Make Payment"
       Then I should see "Payment succesfull to escrow account"
+      And I shouled see "Status: Received"
