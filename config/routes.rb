@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :bids, only: [:new, :create, :index, :show]
   end
 
-  resources :charges
+  resources :charges, only: [:create]
 
   root controller: :home, action: :index
   resources :home, only: [:index]
