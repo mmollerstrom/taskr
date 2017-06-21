@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20170620115552) do
     t.datetime "updated_at", null: false
     t.bigint "task_category_id"
     t.string "status"
+    t.string "slug"
     t.bigint "user_id"
     t.string "time_frame"
     t.string "task_image_file_name"
