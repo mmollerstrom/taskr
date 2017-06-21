@@ -1,11 +1,15 @@
 class ChargesController < ApplicationController
 
+  def index
+
+  end
+
   def new
   end
 
   def create
     # Amount in cents
-    @amount = Bid.select(:winning_bid).take
+    @amount = 5000
 
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
