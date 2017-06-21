@@ -2,8 +2,6 @@ class ChargesController < ApplicationController
 
   def create
     # Amount in cents
-
-    binding.pry
     @bid = Bid.find(params[:bid_id])
     @amount = @bid.quote*100
     @task = @bid.task
